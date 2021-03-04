@@ -1,11 +1,10 @@
 {
-  "name": "api",
+  "name": "cis-consumer-webhook",
   "version": "0.0.2",
-  "description": "nestjs-auth-postgres",
-  "author": "",
-  "private": true,
-  "license": "UNLICENSED",
-  "repository": "https://git.trinitypro.ru/trinity/api",
+  "description": "Nest API consumer Webhook repository",
+  "license": "MIT",
+  "author": "Alexander Serditov",
+  "repository": "https://github.com/dguard/cis-consumer-webhook",
   "scripts": {
     "parse": "node -r dotenv/config parser/",
     "format": "prettier --write \"**/*.ts\"",
