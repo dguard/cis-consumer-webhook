@@ -58,9 +58,20 @@ export class ConsumeController {
     });
   }
 
+  protected latestWebhookCallback = null;
+
   @Post()
   async getCallback(@Body() modelData): Promise<any> {
+    this.latestWebhookCallback = modelData;
     console.log(modelData)
+  }
+
+  @Get()
+  async getLatestWebhookCallback(@Body() modelData): Promise<any> {
+    if(this.latestWebhookCallback) {
+      return JSON.stringify(this.latestWebhookCallback);
+    }
+    return {};
   }
 
 
