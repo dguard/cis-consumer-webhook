@@ -17,8 +17,10 @@ export class ConsumeService {
   async getWebhook(callback_url) {
     return new Promise((resolve, reject) => {
       this.logger.debug('get webhook');
+      const modelData = { callback_url };
+
       axios
-        .get(`${this.config.get('WEBHOOK_API_HOST')}/webhook/${callback_url}`)
+        .post(`${this.config.get('WEBHOOK_API_HOST')}/webhook/retrieve`, modelData)
         .then((res: any) => {
           this.logger.debug(`received statusCode: ${res.status}`);
           resolve();

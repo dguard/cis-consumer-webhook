@@ -25,10 +25,9 @@ export class ConsumeController {
 
   async restoreConsume() {
     const callback_url = `${this.config.get('CONSUMER_WEBHOOK_HOST')}/consume`;
-    const callback_url_escaped = querystring.escape(callback_url);
 
     return new Promise((resolve, reject) => {
-      this.getWebhook(callback_url_escaped).then((res) => {
+      this.getWebhook(callback_url).then((res) => {
         if('exists' == res['status']) {
           this.logger.debug('webhook exists');
           // keep
