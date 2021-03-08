@@ -27,7 +27,7 @@
 ## Description
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-DEMO (host listens for webhook)
+[DEMO](https://consume.webhook.cis.digitallyconstructed.ru/consume) (host listens for webhook)
 
 ### CIS
 
