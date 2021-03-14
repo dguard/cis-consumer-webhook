@@ -29,21 +29,17 @@
 
 [DEMO](https://consume.webhook.cis.digitallyconstructed.ru/consume) (host listens for webhook)
 
-### CIS
-
-[API](https://github.com/dguard/cis-api)
-
-[Frontend](https://github.com/dguard/cis-front)
-
-[Worker](https://github.com/dguard/cis-worker)
-
-### \>CIS Webhook
-
-[Webhook API](https://github.com/dguard/cis-webhook-api)
-
-[Webhook Worker](https://github.com/dguard/cis-webhook-worker)
-
-\>Consumer Webhook
+| Service | Repo |
+| --- | --- |
+| API 📦 | [cis-api](https://github.com/dguard/cis-api) |
+| Frontend 📦 | [cis-front](https://github.com/dguard/cis-front) |
+| Worker 📦 | [cis-worker](https://github.com/dguard/cis-worker) |
+|  📦 |  |
+| Webhook API 🐍| [cis-webhook-api](https://github.com/dguard/cis-webhook-api) |
+| Webhook Worker 🐍| [cis-webhook-worker](https://github.com/dguard/cis-webhook-worker) |
+| Consumer Webhook 🐍| cis-consumer-webhook (you are inside) |
+|  📦 |  |
+| Graphql API 🐍| [cis-graphql-api](https://github.com/dguard/cis-graphql-api) |
 
 ## Installation
 
